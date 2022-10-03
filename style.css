@@ -2,3 +2,105 @@ body {
   background-color: black;
   color: white;
 }
+
+.header {
+  padding: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  background-color: #000000;
+  color: #ffffff;
+  }
+
+.header h1 {
+  display: inline-block;
+  font-size: 24px;
+}
+
+.header nav {
+  margin-right: 20px;
+  float: right;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 24px;
+}
+
+.header nav ul li {
+  display: inline-block;
+  margin-left: 25px;
+  color: white;
+}
+
+.header nav ul li a {
+  color:white;
+}
+
+.banner {
+  height: 50px;
+  width: 100%;
+  margin-bottom: 25px;
+  background-size: cover;
+  background-position: center;
+}
+
+.line {
+  border-left: 1px solid white;
+  height: 300px;
+  margin-left: 100px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  position: relative;
+  
+}
+
+.about-me {
+  display: flex;
+  font-size: 30px;
+  align-items: center;
+  
+
+}
+.about-me h2 {
+  display:flex;
+  font-size: 30px;
+  text-wrap: wrap;
+}
+
+.about-me p {
+  margin-left: 100px;
+}
+
+.work {
+  display: flex;
+  font-size: 30px;
+  align-items: center;
+}
+
+.work h2 {
+  margin-right: 18px;
+}
+.work img {
+  margin-left: 100px;
+}
+.contact-info {
+  display: flex;
+  font-size: 30px;
+  align-items: center;
+  box-sizing: content-box;
+  width: 100px;
+}
+.contact-info h2 {
+  margin-right: -25px
+}
+
+.contact-info a {
+  margin-left: 100px;
+}
+
+.resume {
+  display: flex;
+  font-size: 30px;
+  align-items: center;
+}
+
+.resume h2 {
+  margin-right: -25px;
+  
+}
