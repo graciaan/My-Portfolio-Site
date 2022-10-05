@@ -1,13 +1,13 @@
 body {
-  background-color: black;
-  color: white;
+  background-color: rgb(255, 255, 255);
+  color: black;
 }
 
 .header {
   padding: 20px;
   font-family: 'Times New Roman', Times, serif;
-  background-color: #000000;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #000000;
   }
 
 .header h1 {
@@ -22,16 +22,18 @@ body {
   font-size: 24px;
 }
 
+/** Setting the nav links to be on the right hand side of the screen */
 .header nav ul li {
   display: inline-block;
   margin-left: 25px;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 .header nav ul li a {
-  color:white;
+  color:rgb(0, 0, 0);
 }
 
+/** this is to stretch out the image of the banner to create a different design**/
 .banner {
   height: 50px;
   width: 100%;
@@ -40,8 +42,9 @@ body {
   background-position: center;
 }
 
+/** this is the line that is seperating out the name of the sections with the content **/
 .line {
-  border-left: 1px solid white;
+  border-left: 2.5px solid rgb(179, 239, 249);
   height: 300px;
   margin-left: 100px;
   margin-bottom: 30px;
@@ -54,17 +57,20 @@ body {
   display: flex;
   font-size: 30px;
   align-items: center;
-  
+  margin-left: 50px;
+
+}
+
+.about-me p {
+  font-size: 20px;
+  text-align: justify;
+  margin-left: 50px;
 
 }
 .about-me h2 {
   display:flex;
   font-size: 30px;
-  text-wrap: wrap;
-}
-
-.about-me p {
-  margin-left: 100px;
+  flex-wrap: wrap;
 }
 
 .work {
@@ -76,9 +82,98 @@ body {
 .work h2 {
   margin-right: 18px;
 }
+
 .work img {
-  margin-left: 100px;
+  margin-left: 20px;
+  max-width:300px;
+  border: solid 5px rgb(179, 239, 249)
 }
+
+/** this is the flexbox that arranges the images... **/
+.img-container {
+  display:flex;
+  flex-wrap:wrap;
+  flex-direction: row;
+}
+
+.img-container2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex: 1 0 100%;
+}
+
+.img-container2 img {
+  flex: 0 0 48%;
+}
+
+.img-container3 {
+  display:flex;
+  flex-direction: row;
+  flex: 1 0 100%;
+}
+
+
+/** tooltips that bring up the title of each project when hovering over the image **/
+.tooltip1:hover::before {
+  content: attr(data-tooltip1);
+  position: absolute;
+  background-color:rgb(179, 239, 249);
+  max-width: 100%;
+  transform: translateX(-50%) translateY(-100%);
+  left: 19.25%;
+  bottom: 20%;
+  opacity: 1;
+}
+
+/** tooltips that bring up the title of each project when hovering over the image **/
+.tooltip2:hover::before {
+  content: attr(data-tooltip2);
+  position: absolute;
+  background-color:rgb(179, 239, 249);
+  max-width: 100%;
+  transform: translateX(-50%) translateY(-100%);
+  left: 19.25%;
+  bottom: -1%;
+  
+}
+
+/** tooltips that bring up the title of each project when hovering over the image **/
+.tooltip3:hover::before {
+  content: attr(data-tooltip3);
+  position: absolute;
+  background-color:rgb(179, 239, 249);
+  max-width: 100%;
+  transform: translateX(-50%) translateY(-100%);
+  left: 36.5%;
+  bottom: -1%;
+  
+}
+
+/** tooltips that bring up the title of each project when hovering over the image **/
+.tooltip4:hover::before {
+  content: attr(data-tooltip4);
+  position: absolute;
+  background-color:rgb(179, 239, 249);
+  max-width: 100%;
+  transform: translateX(-50%) translateY(-100%);
+  left: 19.25%;
+  bottom: -22%;
+  
+}
+
+/** tooltips that bring up the title of each project when hovering over the image **/
+.tooltip5:hover::before {
+  content: attr(data-tooltip5);
+  position: absolute;
+  background-color:rgb(179, 239, 249);
+  max-width: 100%;
+  transform: translateX(-50%) translateY(-100%);
+  left: 36.5%;
+  bottom: -22%;
+  
+}
+
 .contact-info {
   display: flex;
   font-size: 30px;
