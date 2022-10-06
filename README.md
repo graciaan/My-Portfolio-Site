@@ -2,6 +2,8 @@
 
 Version 1
 
+Welcome to https://graciaan.github.io/My-Portfolio-Site/
+
 The purpose of this project is to create a portfolio website that I can continue to update along my journey as a web-developer/programmer.
 
 As of this current writing, the website is still not complete. I will be updating the site as time goes on and my skills develop more.
